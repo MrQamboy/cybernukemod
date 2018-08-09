@@ -33,7 +33,7 @@ namespace cybernuke.Items
 		public override bool ConsumeAmmo(Player player)
 		{
 			//this f value is chance to not consume ammo as portion of 1
-			return Main.rand.NextFloat() >= .76f;
+			return Main.rand.NextFloat() >= .75f;
 		}
 
 		public override void AddRecipes()
