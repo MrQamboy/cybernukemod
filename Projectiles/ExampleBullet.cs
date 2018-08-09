@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Cybernuke.Projectiles
+namespace cybernukemod.Projectiles
 {
 	public class ExampleBullet : ModProjectile
 	{

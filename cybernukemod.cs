@@ -1,10 +1,10 @@
 using Terraria.ModLoader;
 
-namespace cybernuke
+namespace cybernukemod
 {
-	class cybernuke : Mod
+	class cybernukemod : Mod
 	{
-		public cybernuke()
+		public cybernukemod()
 		{
 		}
 	}

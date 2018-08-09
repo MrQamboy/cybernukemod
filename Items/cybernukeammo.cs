@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Cybernuke.Items
+namespace cybernukemod.Items
 {
 	public class cybernukeammo : ModItem
 	{
