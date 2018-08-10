@@ -9,8 +9,8 @@ namespace cybernukemod.Projectiles
 	{
 		public override void SetDefaults()
 		{
-			projectile.width = 16;
-			projectile.height = 16;
+			projectile.width = 8;
+			projectile.height = 8;
 			projectile.friendly = true;
 			projectile.magic = true;
 			projectile.penetrate = 3;
