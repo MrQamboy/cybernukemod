@@ -19,7 +19,7 @@ namespace cybernukemod.Projectiles
 
 		public override void AI()
 		{
-			projectile.velocity.Y += projectile.ai[0];
+			//projectile.velocity.Y += projectile.ai[0];
 			if (Main.rand.Next(3) == 0)
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("BlueZenithDus"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
@@ -70,6 +70,7 @@ namespace cybernukemod.Projectiles
 		{
 			projectile.ai[0] += 0.1f;
 			projectile.velocity *= 0.75f;
+			target.AddBuff(mod.BuffType("zenith"), 1200); //add zenith debuff to enemy for 20 seconds lol
 		}
 	}
 }
