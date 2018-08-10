@@ -12,7 +12,7 @@ namespace cybernukemod
 		public override void Load()
 		{
 			if (!Main.dedServ){
-				Main.music[MusicID.Dungeon] = GetMusic("Sounds/Music/blackrover.mp3");
+				Main.music[MusicID.Dungeon] = GetMusic("Sounds/Music/blackrover");
 			}
 		}
 	}
