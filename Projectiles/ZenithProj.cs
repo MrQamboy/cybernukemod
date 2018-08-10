@@ -13,7 +13,7 @@ namespace cybernukemod.Projectiles
 			projectile.height = 16;
 			projectile.friendly = true;
 			projectile.magic = true;
-			projectile.penetrate = 0;
+			projectile.penetrate = 3;
 			projectile.timeLeft = 600;
 		}
 
@@ -23,6 +23,13 @@ namespace cybernukemod.Projectiles
 			if (Main.rand.Next(3) == 0)
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("BlueZenithDus"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}
+			projectile.velocity.X *= 0.99f;
+			projectile.velocity.Y *= 0.99f;
+			if (projectile.velocity.X <= 0 || projectile.velocity.Y <= 0){
+				if (Main.rand.Next(120) == 0){
+					projectile.Kill();
+				}
 			}
 		}
 
